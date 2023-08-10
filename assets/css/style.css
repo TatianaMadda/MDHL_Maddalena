@@ -5,7 +5,7 @@
 }
 
 html {
-    background-color: rgb(183, 175, 175);
+    background-color: rgb(75, 72, 72);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -91,11 +91,12 @@ nav a {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    color: rgb(155, 19, 14);
 }
 
 nav a:hover {
     background-color: white;
-    color: #010608;
+    color: #0a7251;
     font-weight: bold;
 
 }

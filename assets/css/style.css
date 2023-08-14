@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
     background-color: rgb(75, 72, 72);
-    font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -20,16 +21,18 @@ header {
     background-position: 0% 99%;
     display: flex;
     flex-direction: column;
-   
+    box-shadow: 2px 4px 4px rgba(0, 0, 0);
+
 }
 
 .logo {
     position: absolute;
-    top: 175px;
+    top: 200px;
     right: 100px;
     width: 100px;
     border: 2px solid #000;
     background-color: black;
+    box-shadow: 6px 6px 6px rgb(0, 0, 0);
 }
 
 .banner {
@@ -37,10 +40,9 @@ header {
     padding: 10px;
     color: black;
     font-size: 45px;
-    
 }
 
-.titulo {
+.title {
     border: 2px solid #000;
     background-color: rgb(0, 0, 0);
     color: #dbb10b;
@@ -48,7 +50,7 @@ header {
     height: 40px;
     text-align: center;
     font-size: 30px;
-   
+
 }
 
 /* main-------------------------------------------------------------------*/
@@ -69,17 +71,21 @@ nav {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
-    width: max-content;
+    width: 200px;
+
+
 }
 
 nav div {
     display: flex;
     flex-direction: column;
+    width: 200px;
 
 
 }
 
 nav a {
+    width: 200px;
     margin-bottom: 25px;
     font-size: 20px;
     border: 3px solid #dbb10b;
@@ -92,13 +98,16 @@ nav a {
     align-items: center;
     font-weight: bold;
     color: rgb(155, 19, 14);
+    box-shadow: 8px 8px 10px rgb(0, 0, 0);
+
 }
 
 nav a:hover {
     background-color: white;
     color: #0a7251;
     font-weight: bold;
-
+    box-shadow: 8px 8px 10px rgba(5, 104, 35, 0.4);
+    transform: translateX(10px);
 }
 
 /* home -----------------------*/
@@ -111,9 +120,29 @@ section {
 
 }
 
-#eventos {
-    margin-left: 400px;
-    margin-top: 100px;
+#events {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+
+
+}
+
+#events div {
+    width: 50%;
+    align-self: normal;
+    border: 2px solid #000;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    background-color: #0a7251;
+
+}
+
+#events h3 {
+    margin-bottom: 10px;
 }
 
 section p {
@@ -125,9 +154,9 @@ article {
     display: flex;
     flex-direction: column;
     font-size: 20px;
-    width: 50%;
-    margin-right: 200px;
-    margin-left: 200px;
+    width: 80%;
+    margin-right: 150px;
+    margin-left: 150px;
     text-align: justify;
 
 }
@@ -136,11 +165,28 @@ article h2 {
     margin-top: 20px;
 
 }
+
+.gallery {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly
+}
+
+.gallery img {
+    max-width: 100%;
+    width: 35%;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0);
+    margin: 15px;
+}
+
 #contact {
     display: flex;
     margin: auto;
     margin-left: 400px;
-    
+
 }
 
 /* rules---------- */
@@ -151,6 +197,7 @@ article h2 {
     text-align: justify;
     list-style-position: inside;
     width: 50%;
+    margin-bottom: 10px;
 }
 
 .sangria {
@@ -188,7 +235,7 @@ span {
 }
 
 /* game info -------------------*/
-#subrayado {
+#underline {
     text-decoration: underline;
 }
 
@@ -199,10 +246,168 @@ span {
     text-align: left;
     margin-left: 150px;
     margin-right: 150px;
+    border: 2px solid black;
+    background-color: #0a7251;
+
 }
 
-#contacto {
+#tablegames td,
+th {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#contact_ {
     display: flex;
     justify-content: space-between;
+}
 
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    justify-content: space-around;
+
+}
+
+.maps {
+    border: 2px solid black;
+    box-shadow: 6px 6px 6px rgb(43, 22, 22);
+
+}
+
+/* formulario -----------*/
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form label {
+    display: inline-block;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 100%;
+    height: 30px;
+    padding: 2px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form select {
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    font-size: 15px;
+}
+
+
+form input[type="submit"] {
+    background-color: #dbb10b;
+    color: rgb(155, 19, 14);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0);
+}
+
+
+#permission p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+
+form label,
+form input,
+form select {
+    margin: 5px;
+}
+
+fieldset {
+    padding-top: 1rem;
+    border: none;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    border: 2px solid;
+    border-radius: 16px;
+    padding: 50px;
+
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+
+/* show_data style */
+#show_data {
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 800px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+#show_data th,
+#show_data td {
+    padding: 5px;
+    border: 2px solid black;
+
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#show_data table {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+.return-button {
+    margin-bottom: 25px;
+    font-size: 20px;
+    border: 3px solid #dbb10b;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #dbb10b;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(155, 19, 14);
+}
+
+.return-button:hover {
+    background-color: white;
+    color: #0a7251;
+    font-weight: bold;
 }
